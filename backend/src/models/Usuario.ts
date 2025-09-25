@@ -21,4 +21,6 @@ export class Usuario implements IUsuario {
     validate(): boolean {
         return !!this.name && !!this.password
     }
+
+    //hashPassword()
 }
