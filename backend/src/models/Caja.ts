@@ -7,11 +7,11 @@ export interface ICaja {
     ubicacion: Ubicacion_Caja
 }
 
-export class Caja implements ICaja {
-    id: string
-    peso: number
-    hectarea: string
-    ubicacion: Ubicacion_Caja
+export class Caja {
+    private id: string
+    private peso: number
+    private hectarea: string
+    private ubicacion: Ubicacion_Caja
 
     constructor(id: string, peso: number, hectarea: string, ubicacion: Ubicacion_Caja) {
         this.id = id

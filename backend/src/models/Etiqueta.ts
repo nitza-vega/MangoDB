@@ -5,11 +5,11 @@ export interface IEtiqueta {
     kilogramos: string
 }
 
-export class Etiqueta implements IEtiqueta {
-    id: string
-    hectarea: string
-    planta: string
-    kilogramos: string
+export class Etiqueta {
+    private id: string
+    private hectarea: string
+    private planta: string
+    private kilogramos: string
 
     constructor(id: string, hectarea: string, planta: string, kilogramos: string) {
         this.id = id

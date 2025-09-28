@@ -5,11 +5,11 @@ export interface IAlmacen {
     location: string
 }
 
-export class Almacen implements IAlmacen {
-    id: string
-    nombre: string
-    comunidad: string
-    location: string
+export class Almacen {
+    private id: string
+    private nombre: string
+    private comunidad: string
+    private location: string
 
     constructor(id: string, nombre: string, comunidad: string, location:string) {
         this.id = id

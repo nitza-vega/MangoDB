@@ -5,11 +5,11 @@ export interface IUbicacion_Caja {
     subdivision: string
 }
 
-export class Ubicacion_Caja implements IUbicacion_Caja {
-    id: string
-    estante: string
-    division: string
-    subdivision: string
+export class Ubicacion_Caja {
+    private id: string
+    private estante: string
+    private division: string
+    private subdivision: string
 
     constructor(id: string, estante:string, division: string, subdivision: string) {
         this.id = id

@@ -5,11 +5,11 @@ export interface IUsuario {
     password: string
 }
 
-export class Usuario implements IUsuario {
-    id: string
-    name: string
-    rol: string
-    password: string
+export class Usuario {
+    private id: string
+    private name: string
+    private rol: string
+    private password: string
 
     constructor(id: string, name: string, rol: string, password: string) {
         this.id = id
