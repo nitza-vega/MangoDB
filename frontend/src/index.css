@@ -1,31 +1,32 @@
-:root {
-  --color-fondo: white;
+body.light {
+  --color-fondo: rgb(241, 222, 222);
   --color-texto: black;
   --ancho-maximo: 100vw;
-  
-  color: var(--color-texto);
-  background-color: var(--color-fondo);
-  max-width: var(--ancho-maximo);
+  --navbar-gradient: linear-gradient(200deg, rgb(123, 84, 251), rgb(177, 117, 255));
+  --color-a: black;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-fondo: black;
-    --color-texto: white;
-    --ancho-maximo: 100vw;
-  }
+body.dark {
+  --color-fondo: #383838;
+  --color-texto: white;
+  --ancho-maximo: 100vw;
+  --navbar-gradient: linear-gradient(200deg, black, rgb(38, 38, 38));
+  --color-a: white;
 }
 
-a {
-  font-weight: 500;
-  color: green;
-  text-decoration: inherit;
-}
-a:hover {
-  color: greenyellow;
+#navbar {
+  background: var(--navbar-gradient);
+  transition: background 0.5s ease;
 }
 
 body {
   margin: 0;
   padding: 0;
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+  max-width: var(--ancho-maximo);
+}
+
+a {
+  color: var(--color-a);
 }
