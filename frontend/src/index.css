@@ -1,22 +1,17 @@
+/* CUERPO DEL PROYECTO */
 body.light {
   --color-fondo: rgb(241, 222, 222);
   --color-texto: black;
   --ancho-maximo: 100vw;
-  --navbar-gradient: linear-gradient(200deg, rgb(123, 84, 251), rgb(177, 117, 255));
-  --color-a: black;
+  --navbar-gradient: linear-gradient(90deg, #15400E, #F58805, #991531);
+  --color-a: white;
 }
 
 body.dark {
   --color-fondo: #383838;
   --color-texto: white;
   --ancho-maximo: 100vw;
-  --navbar-gradient: linear-gradient(200deg, black, rgb(38, 38, 38));
-  --color-a: white;
-}
-
-#navbar {
-  background: var(--navbar-gradient);
-  transition: background 0.5s ease;
+  --navbar-gradient: linear-gradient(200deg, black, #15400E);
 }
 
 body {
@@ -25,6 +20,16 @@ body {
   color: var(--color-texto);
   background-color: var(--color-fondo);
   max-width: var(--ancho-maximo);
+}
+
+#navbar {
+  background: var(--navbar-gradient);
+  transition: background 0.5s ease;
+}
+
+/* CUERPO DE CONTENIDO */
+main {
+  margin: 0 3%;
 }
 
 a {

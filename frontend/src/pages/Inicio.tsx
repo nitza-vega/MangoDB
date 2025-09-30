@@ -1,7 +1,11 @@
 import React from "react"
 
-const Inicio = () => {
+function Inicio() {
     return (
-        <div></div>
+        <div>
+            Hola mundo
+        </div>
     )
 }
+
+export default Inicio

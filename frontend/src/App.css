@@ -1,9 +1,3 @@
-/* CUERPO DE CONTENIDO */
-#body {
-  margin: 0 3% 0 3%;
-  border: 1px solid red;
-}
-
 /* BARRA DE NAVEGACIÓN
   -> Escritorio */
 
@@ -19,6 +13,10 @@
 #navbar-logo {
   justify-self: start;
   margin-left: 15px;
+}
+
+#navbar-logo img {
+  height: 3rem;
 }
 
 .navbar-list {
@@ -75,10 +73,6 @@
     justify-content: space-between;
     align-items: center;
     min-height: 4rem;
-    width: 100%;
-  }
-
-  #navbar-logo {
     width: 100%;
   }
 
